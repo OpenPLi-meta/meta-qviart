@@ -1,6 +1,6 @@
-SRCDATE = "20220204"
+SRCDATE = "20230831"
 
 require qviart-libs.inc
 
-SRC_URI[md5sum] = "8eaf859ba34e7b3e3984557f6a8314d5"
-SRC_URI[sha256sum] = "fe8cfb70c63a6e17c2b1dff6b12fb2bf6d5b9db7d6059f3db5ed1331b146301f"
+SRC_URI[md5sum] = "3eae00f4428d01890deddd2d671db69a"
+SRC_URI[sha256sum] = "ebe560fbc08d061b393c25f59a96ef3328e8cadaa23e33747e85b85b738b3808"
