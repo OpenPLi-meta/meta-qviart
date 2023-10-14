@@ -14,7 +14,7 @@ PR = "r11"
 
 DEPENDS = "libdvbsi++"
 
-SRC_URI = "git://github.com/pli3/qviart-opera-dumpait.git;protocol=http"
+SRC_URI = "git://github.com/pli3/qviart-opera-dumpait.git;protocol=https"
 
 S = "${WORKDIR}/git"
 DESTDIR = "enigma2/python/Plugins/Extensions/HbbTV"
