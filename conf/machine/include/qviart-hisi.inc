@@ -12,6 +12,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += " \
 	qviart-reader-${SOC_FAMILY} \
 	qviart-libreader-${SOC_FAMILY} \
 	qviart-loadmodules-${SOC_FAMILY} \
+	qviart-opengl-${SOC_FAMILY} \
 	qviart-bootoptions-${MACHINE} \
 	partitions-by-name \
 	e2fsprogs-resize2fs \
