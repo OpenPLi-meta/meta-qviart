@@ -4,7 +4,7 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 include conf/machine/include/autoload-filesystems.inc
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
-	qviart-dvb-modules-${CHIPSET} \
+	qviart-dvb-modules-${MACHINE} \
 	qviart-kernel-params \
 	qviart-shutdown \
 	ntfs-3g \

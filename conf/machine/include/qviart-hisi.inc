@@ -1,13 +1,6 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 
-KERNEL_FILE = "kernel.bin"
-ROOTFS_FILE = "rootfs.tar.bz2"
-MTD_BLACK  = "mmcblk0"
-
-MTD_KERNEL = "mmcblk0p27"
-MTD_ROOTFS = "mmcblk0p30"
-
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += " \
 	qviart-reader-${SOC_FAMILY} \
 	qviart-libreader-${SOC_FAMILY} \
@@ -20,7 +13,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += " \
 	kernel-module-8192eu \
 	deepsleep-${SOC_FAMILY} \
 	${SOC_FAMILY}-shutdown \
-	qviart-dvb-modules-${SOC_FAMILY} \
+	qviart-dvb-modules-${MACHINE} \
 	${@bb.utils.contains('MACHINE_FEATURES', 'fastboot', 'android-tools', '', d)} \
 	${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'partitions-by-name', '', d)} \
 	qviart-blindscan-utils-${SOC_FAMILY} \
