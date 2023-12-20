@@ -17,7 +17,7 @@ SRC_URI[sha256sum] = "fe8fbe9084cc82a517226f99f736ad874269478ce52c13e6988bbd2213
 # ex) bcmlinuxdvb_7252S-200mm-3.14.28-20161130.tar.gz.
 # only 2 case. ( 200mm and 300mm )
 
-SRC_URI = "http://en3homeftp.net/release/images/iqon/bcmlinuxdvb_${CHIP}-${MODEL_SIZE}-${KV}-${SRCDATE}.tar.gz"
+SRC_URI = "http://en3homeftp.net/release/images/iqon/bcmlinuxdvb_7252S-300mm-${KV}-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
 
