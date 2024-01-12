@@ -1,7 +1,7 @@
 SUMMARY = "Utilities for transponder & dvb-s blindscan"
 SECTION = "base"
 PRIORITY = "optional"
-RDEPENDS_${PN} = "ncurses"
+RDEPENDS:${PN} = "ncurses"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
@@ -10,7 +10,7 @@ LICENSE = "CLOSED"
 PACKAGES = "qviart-blindscan-dvbs-utils"
 
 PROVIDES += "virtual/blindscan-dvbs"
-RPROVIDES_qviart1-blindscan-dvbs-utils += "virtual/blindscan-dvbs"
+RPROVIDES:qviart1-blindscan-dvbs-utils += "virtual/blindscan-dvbs"
 
 SRC_URI = "file://qviart_blindscan"
 
@@ -19,7 +19,7 @@ PR = "r0"
 
 S = "${WORKDIR}"
 
-FILES_qviart-blindscan-dvbs-utils = "${bindir}/*_blindscan"
+FILES:qviart-blindscan-dvbs-utils = "${bindir}/*_blindscan"
 
 do_install() {
     install -d ${D}/${bindir}/

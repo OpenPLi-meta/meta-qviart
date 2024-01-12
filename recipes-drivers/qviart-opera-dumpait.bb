@@ -14,7 +14,7 @@ PR = "r11"
 
 DEPENDS = "libdvbsi++"
 
-SRC_URI = "git://github.com/pli3/qviart-opera-dumpait.git;protocol=https"
+SRC_URI = "git://github.com/pli3/qviart-opera-dumpait.git;protocol=https;branch=master"
 
 S = "${WORKDIR}/git"
 DESTDIR = "enigma2/python/Plugins/Extensions/HbbTV"
@@ -24,6 +24,6 @@ do_install() {
     install -m 0755 ${S}/src/dumpait ${D}/usr/lib/${DESTDIR}
 }
 
-FILES_${PN} = "${libdir}/${DESTDIR}/dumpait"
-FILES_${PN}-dbg = "${libdir}/${DESTDIR}/.debug"
-FILES_${PN}-src = "/usr/src"
+FILES:${PN} = "${libdir}/${DESTDIR}/dumpait"
+FILES:${PN}-dbg = "${libdir}/${DESTDIR}/.debug"
+FILES:${PN}-src = "/usr/src"

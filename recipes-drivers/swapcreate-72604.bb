@@ -4,7 +4,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 require conf/license/license-gplv2.inc
 
 PROVIDES += "swapcreate-${CHIP}"
-RPROVIDES_${PN} += "swapcreate-${CHIP}"
+RPROVIDES:${PN} += "swapcreate-${CHIP}"
 
 PV = "1.0"
 PR = "r1"

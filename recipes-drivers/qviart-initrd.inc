@@ -6,7 +6,7 @@ PR = "r7"
 
 SRC_URI = "http://en3homeftp.net/pub/down/vmlinuz-initrd_${MACHINE}_${SRCDATE}.tar.gz"
 
-FILES_${PN} = "/boot"
+FILES:${PN} = "/boot"
 
 INHIBIT_PACKAGE_STRIP = "1"
 PACKAGE_ARCH := "${MACHINE_ARCH}"

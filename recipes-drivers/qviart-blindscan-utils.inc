@@ -6,7 +6,7 @@ LICENSE = "CLOSED"
 PACKAGES = "qviart-blindscan-utils-${CHIP}"
 
 PROVIDES += "virtual/blindscan-dvbs"
-RPROVIDES_qviart-blindscan-utils-${CHIP} += "virtual/blindscan-dvbs"
+RPROVIDES:qviart-blindscan-utils-${CHIP} += "virtual/blindscan-dvbs"
 
 PV = "1.0"
 PR = "r0"
@@ -24,7 +24,7 @@ do_install() {
 	install -m 0755 ${S}/qviart_blindscan_${CHIP} ${D}/${bindir}
 }
 
-FILES_qviart-blindscan-utils-${CHIP} = " \
+FILES:qviart-blindscan-utils-${CHIP} = " \
 	${bindir}/qviart_blindscan_${CHIP} \
 "
 

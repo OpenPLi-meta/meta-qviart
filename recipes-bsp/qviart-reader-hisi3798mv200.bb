@@ -4,7 +4,7 @@ PRIORITY = "optional"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-RDEPENDS_${PN} = "libsdl"
+RDEPENDS:${PN} = "libsdl"
 
 COMPATIBLE_MACHINE = "^(force5|dual)$"
 
@@ -28,9 +28,9 @@ do_install() {
 do_package_qa() {
 }
 
-FILES_${PN}  = "${bindir}/app_init"
+FILES:${PN}  = "${bindir}/app_init"
 
 SRC_URI[md5sum] = "4bac2f4821aacf9f7f5b5e511350cf68"
 SRC_URI[sha256sum] = "263f8ecff16eacfaef0c857445f7beade68163336cf73f13de7f18d26f36b019"
 
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"

@@ -1,7 +1,7 @@
 require platform-util.inc
 
 PROVIDES += "platform-util-${CHIP}"
-RPROVIDES_${PN} += "platform-util-${CHIP}"
+RPROVIDES:${PN} += "platform-util-${CHIP}"
 
 COMPATIBLE_MACHINE = "^(lunix4k)$"
 

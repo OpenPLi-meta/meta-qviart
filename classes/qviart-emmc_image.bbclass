@@ -1,6 +1,6 @@
 inherit image_types
 
-IMAGE_TYPEDEP_qviartemmc = "ext4"
+IMAGE_TYPEDEP:qviartemmc = "ext4"
 
 do_image_qviartemmc[depends] = " \
     parted-native:do_populate_sysroot \
@@ -11,7 +11,7 @@ do_image_qviartemmc[depends] = " \
     qviart-buildimage-native:do_populate_sysroot \
     "
 
-IMAGE_CMD_qviartemmc () {
+IMAGE_CMD:qviartemmc () {
   rm -rf ${IMGDEPLOYDIR}/rootfs
   rm -rf ${IMGDEPLOYDIR}/rootfs_sub
   rm -rf ${IMGDEPLOYDIR}/rootfs_sub.ext4
@@ -30,6 +30,5 @@ IMAGE_CMD_qviartemmc () {
 	if [ $ROOTFS_SIZE -lt $MIN_COUNT ]; then
 		eval COUNT=\"$MIN_COUNT\"
 	fi
-
 	make_ext4fs -s -l 6968M ${IMGDEPLOYDIR}/${IMAGE_NAME}_subrootfs.ext4 ${IMGDEPLOYDIR}/rootfs
 }

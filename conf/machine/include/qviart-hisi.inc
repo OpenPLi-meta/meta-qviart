@@ -41,7 +41,7 @@ MACHINE_FEATURES += " alsa usbhost wlan switchoff osdposition hdmicec"
 
 DVBMEDIASINK_CONFIG = "--with-pcm --with-eac3 --with-amr --with-wmv --with-h265 --with-vb8 --with-vb9 --with-spark --with-dts"
 
-require conf/machine/include/tune-cortexa15.inc
+require conf/machine/include/arm/armv7a/tune-cortexa15.inc
 
 MACHINE_EXTRA_RRECOMMENDS = " \
 	ffmpeg \
@@ -53,7 +53,7 @@ IMGDEPLOYDIR ?= "${DEPLOY_DIR_IMAGE}"
 IMAGEVERSION := "${DISTRO_NAME}-${DISTRO_VERSION}-${DATE}"
 IMAGEVERSION[vardepsexclude] = "DATE"
 
-IMAGE_CMD_qviartemmc_append = "\
+IMAGE_CMD:qviartemmc:append = "\
     mkdir -p ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}; \
     mkdir -p ${DEPLOY_DIR_IMAGE}/release/${IMAGEDIR}; \
     cp ${DEPLOY_DIR_IMAGE}/uImage ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/${KERNEL_FILE}; \
@@ -76,8 +76,8 @@ IMAGE_CMD_qviartemmc_append = "\
     rm -Rf release; \
     "
 
-BBMASK += "meta-openpli/recipes-support/partitions-by-name"
-BBMASK += "meta-vuplus/recipes-graphics/"
-BBMASK += "meta-vuplus/recipes-webkit/"
-BBMASK += "meta-openpli/recipes-webkit/"
+BBMASK = "meta-openpli/recipes-support/partitions-by-name"
+BBMASK = "meta-vuplus/recipes-graphics/"
+BBMASK = "meta-vuplus/recipes-webkit/"
+BBMASK = "meta-openpli/recipes-webkit/"
 

@@ -9,7 +9,7 @@ DEPENDS = "glib-2.0-native gstreamer1.0 gstreamer1.0-plugins-base libdca"
 
 GSTVERSION = "1.0"
 
-SRC_URI = "git://github.com/pli3/qviart-gstreamer1.0-plugins-dvbmediasink.git;protocol=git \
+SRC_URI = "git://github.com/pli3/qviart-gstreamer1.0-plugins-dvbmediasink.git;protocol=https;branch=master \
 "
 
 S = "${WORKDIR}/git"
@@ -19,7 +19,7 @@ inherit gitpkgv
 SRCREV = "${AUTOREV}"
 PR = "r13"
 
-do_configure_prepend() {
+do_configure:prepend() {
     sed -i 's/AC_INIT.*$/AC_INIT(gst-plugin-dvbmediasink, 1.0.0, @pli4)/' ${S}/configure.ac
     sed -i 's/AM_INIT_AUTOMAKE.*$/AM_INIT_AUTOMAKE([foreign])/' ${S}/configure.ac
     touch ${S}/NEWS
@@ -30,9 +30,9 @@ do_configure_prepend() {
 
 inherit autotools pkgconfig
 
-FILES_${PN} = "${libdir}/gstreamer-${GSTVERSION}/*.so* ${sysconfdir}/gstreamer/aactranscode"
-FILES_${PN}-dev += "${libdir}/gstreamer-${GSTVERSION}/*.la"
-FILES_${PN}-staticdev += "${libdir}/gstreamer-${GSTVERSION}/*.a"
-FILES_${PN}-dbg += "${libdir}/gstreamer-${GSTVERSION}/.debug"
+FILES:${PN} = "${libdir}/gstreamer-${GSTVERSION}/*.so* ${sysconfdir}/gstreamer/aactranscode"
+FILES:${PN}-dev += "${libdir}/gstreamer-${GSTVERSION}/*.la"
+FILES:${PN}-staticdev += "${libdir}/gstreamer-${GSTVERSION}/*.a"
+FILES:${PN}-dbg += "${libdir}/gstreamer-${GSTVERSION}/.debug"
 
 EXTRA_OECONF = "${DVBMEDIASINK_CONFIG} --with-gstversion=${GSTVERSION}"
