@@ -3,7 +3,7 @@ HOMEPAGE = "http://www.webkitgtk.org/"
 BUGTRACKER = "http://bugs.webkit.org/"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 COMPATIBLE_MACHINE = "^(lunix3-4k|lunix4k)$"
-LICENSE = "BSD & LGPLv2+"
+LICENSE = "BSD & LGPL-2.0-or-later"
 
 LIC_FILES_CHKSUM = "\
 	file://Source/WebCore/rendering/RenderApplet.h;endline=22;md5=fb9694013ad71b78f8913af7a5959680 \
