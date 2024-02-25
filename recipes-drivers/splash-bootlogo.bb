@@ -11,15 +11,15 @@ PR = "r0"
 
 S = "${WORKDIR}"
 
-SRC_URI:append_lunix3-4k = "file://lunix3-4k_splash.bmp"
-SRC_URI:append_lunix4k = "file://lunix4k_splash.bmp"
-SRC_URI:append_lunix  = " \
+SRC_URI:append:lunix3-4k = "file://lunix3-4k_splash.bmp"
+SRC_URI:append:lunix4k = "file://lunix4k_splash.bmp"
+SRC_URI:append:lunix  = " \
 	file://${MACHINE}_splash.bmp \
 	file://${MACHINE}_splash1.bmp \
 	file://${MACHINE}_splash2.bmp \
 	file://${MACHINE}_splash3.bmp \
 "
-SRC_URI:append_lunixco = " \
+SRC_URI:append:lunixco = " \
 	file://${MACHINE}_splash.bmp \
 	file://${MACHINE}_splash1.bmp \
 	file://${MACHINE}_splash2.bmp \

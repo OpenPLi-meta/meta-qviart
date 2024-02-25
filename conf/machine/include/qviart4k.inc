@@ -4,7 +4,7 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "armv7ahf-neon"
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
-	${@bb.utils.contains("GST_VERSION", "1.0", "gstreamer1.0-libav", "gst-ffmpeg", d)} \
+        gstreamer1.0-libav \
         qviart-initrd-${MACHINE} \
         qviart-shutdown \
 "
