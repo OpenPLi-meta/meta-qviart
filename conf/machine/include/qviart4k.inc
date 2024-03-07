@@ -4,7 +4,6 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "armv7ahf-neon"
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
-        gstreamer1.0-libav \
         qviart-initrd-${MACHINE} \
         qviart-shutdown \
 "
@@ -13,6 +12,7 @@ KERNEL_MODULE_AUTOLOAD += "xfs"
 
 MACHINE_EXTRA_RRECOMMENDS = " \
 	gstreamer1.0-plugin-dvbmediasink \
+        gstreamer1.0-libav \
 	ntfs-3g \
 "
 
