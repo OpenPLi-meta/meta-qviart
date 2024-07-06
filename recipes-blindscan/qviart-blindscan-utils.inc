@@ -6,7 +6,7 @@ PACKAGE_ARCH := "${MACHINE_ARCH}"
 PACKAGES = "qviart-blindscan-utils-${SOC_FAMILY}"
 
 PROVIDES += "virtual/blindscan-dvbs"
-RPROVIDES:qviart-blindscan-utils-${SOC_FAMILY} += "virtual/blindscan-dvbs"
+RPROVIDES:qviart-blindscan-utils-${SOC_FAMILY} += "virtual-blindscan-dvbs"
 
 PV = "1.0"
 PR = "r0"

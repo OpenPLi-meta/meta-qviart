@@ -6,7 +6,7 @@ LICENSE = "CLOSED"
 PACKAGES = "qviart-blindscan-utils-${CHIP}"
 
 PROVIDES += "virtual/blindscan-dvbs"
-RPROVIDES:qviart-blindscan-utils-${CHIP} += "virtual/blindscan-dvbs"
+RPROVIDES:qviart-blindscan-utils-${CHIP} += "virtual-blindscan-dvbs"
 
 PV = "1.0"
 PR = "r0"

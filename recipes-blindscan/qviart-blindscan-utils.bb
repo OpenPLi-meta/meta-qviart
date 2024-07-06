@@ -10,7 +10,7 @@ LICENSE = "CLOSED"
 PACKAGES = "qviart-blindscan-dvbs-utils"
 
 PROVIDES += "virtual/blindscan-dvbs"
-RPROVIDES:qviart1-blindscan-dvbs-utils += "virtual/blindscan-dvbs"
+RPROVIDES:qviart1-blindscan-dvbs-utils += "virtual-blindscan-dvbs"
 
 SRC_URI = "file://qviart_blindscan"
 
