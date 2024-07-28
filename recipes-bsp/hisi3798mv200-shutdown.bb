@@ -40,3 +40,5 @@ exit 0
 }
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
+
+INSANE_SKIP = "32bit-time"
