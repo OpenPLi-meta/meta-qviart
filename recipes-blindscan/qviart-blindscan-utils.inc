@@ -18,3 +18,5 @@ S = "${WORKDIR}"
 INHIBIT_PACKAGE_STRIP = "1"
 
 FILES:${PN}-dbg-${SOC_FAMILY} = "${bindir}/.debug/"
+
+INSANE_SKIP = "32bit-time"
