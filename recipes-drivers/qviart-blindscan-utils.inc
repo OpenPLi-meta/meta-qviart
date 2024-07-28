@@ -24,7 +24,7 @@ do_install() {
 	install -m 0755 ${S}/qviart_blindscan_${CHIP} ${D}/${bindir}
 }
 
-FILES:qviart-blindscan-utils-${CHIP} = " \
+FILES:${PN}-utils-${CHIP} = " \
 	${bindir}/qviart_blindscan_${CHIP} \
 "
 
