@@ -3,7 +3,7 @@ SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
 
-PACKAGES = "qviart-blindscan-utils-${CHIP}"
+PACKAGES = "qviart-blindscan-utils-${CHIP} ${PN}-dbg"
 
 PROVIDES += "virtual/blindscan-dvbs"
 RPROVIDES:qviart-blindscan-utils-${CHIP} += "virtual-blindscan-dvbs"
@@ -27,6 +27,7 @@ do_install() {
 FILES:${PN}-utils-${CHIP} = " \
 	${bindir}/qviart_blindscan_${CHIP} \
 "
+FILES:${PN}-dbg-${CHIP} = "${bindir}/.debug/"
 
 INHIBIT_PACKAGE_STRIP = "1"
 
