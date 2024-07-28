@@ -18,6 +18,7 @@ SRC_URI = "http://en3homeftp.net/pub/down/linux-${KV}-${DATETIME}.tar.xz \
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://0003-dont-mark-register-as-const.patch \
 	file://make-yyloc-declaration-extern.patch \
+	file://fix-build-with-binutils-2.41.patch \
 	"
 
 inherit kernel machine_kernel_pr
