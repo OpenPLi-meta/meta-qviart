@@ -33,6 +33,7 @@ PREFERRED_PROVIDER_virtual/kernel = "linux-qviart"
 PREFERRED_PROVIDER_virtual/egl = "qviart-opengl-${SOC_FAMILY}"
 PREFERRED_PROVIDER_virtual/libgles1 = "qviart-opengl-${SOC_FAMILY}"
 PREFERRED_PROVIDER_virtual/libgles2 = "qviart-opengl-${SOC_FAMILY}"
+PREFERRED_PROVIDER_virtual/kodi = "stb-kodi-${SOC_FAMILY}"
 PREFERRED_RPROVIDER_aio-grab = "qviart-grab-${SOC_FAMILY}"
 
 PREFERRED_PROVIDER_virtual/blindscan-dvbs = "qviart-blindscan-utils-${SOC_FAMILY}"
