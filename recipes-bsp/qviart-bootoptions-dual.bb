@@ -6,7 +6,7 @@ PACKAGE_ARCH = "${MACHINE}"
 
 PR = "20210223"
 
-SRC_URI = "http://source.mynonpublic.com/dags/dags-bootoptions-${PR}.zip"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/dags-bootoptions-${PR}.zip"
 
 S = "${WORKDIR}"
 

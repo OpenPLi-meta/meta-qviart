@@ -6,7 +6,7 @@ PR="${SRCDATE}.${SRCDATE_PR}"
 
 PROVIDES = "virtual/libgles2 virtual/egl"
 
-SRC_URI = "http://en3homeftp.net/pub/down/libgles-arm-${SRCDATE}.tar.gz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/libgles-arm-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}/libgles"
 

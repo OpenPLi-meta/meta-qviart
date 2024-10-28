@@ -7,7 +7,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 PV = "${KV}+${SRCDATE}"
 PR = "r1"
 
-SRC_URI = "http://en3homeftp.net/pub/down/${MACHINE}-hiko-${SRCDATE}.tar.gz \
+SRC_URI = "http://downloads.openpli.org/archive/qviart/${MACHINE}-hiko-${SRCDATE}.tar.gz \
 	file://modules"
 
 S = "${WORKDIR}/lib/modules/${KV}/extra"

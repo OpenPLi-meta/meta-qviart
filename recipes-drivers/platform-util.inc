@@ -2,7 +2,7 @@ SECTION = "base"
 LICENSE = "CLOSED"
 
 SRC_URI = " \
-    http://en3homeftp.net/pub/down/platform-util-${CHIP}.tar.gz \
+    http://downloads.openpli.org/archive/qviart/platform-util-${CHIP}.tar.gz \
     file://${INITSCRIPT_NAME}.sysvinit \
 "
 

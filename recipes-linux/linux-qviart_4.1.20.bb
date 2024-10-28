@@ -13,7 +13,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/stblinux-${KV}:"
 
 DATETIME = "20180321"
 
-SRC_URI = "http://en3homeftp.net/pub/down/linux-${KV}-${DATETIME}.tar.xz \
+SRC_URI = "http://downloads.openpli.org/archive/qviart/linux-${KV}-${DATETIME}.tar.xz \
 	file://defconfig \
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://0003-dont-mark-register-as-const.patch \

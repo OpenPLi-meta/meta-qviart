@@ -11,8 +11,7 @@ RPROVIDES:qviart-blindscan-utils-${CHIP} += "virtual-blindscan-dvbs"
 PV = "1.0"
 PR = "r0"
 
-#SRC_URI = "http://archive.vuplus.com/download/utils/vuplus-blindscan-utils-${PV}.tar.bz2"
-SRC_URI = "http://en3homeftp.net/pub/down/qviart_blindscan_${CHIP}.tar.xz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/qviart_blindscan_${CHIP}.tar.xz"
 
 SRC_URI[md5sum] = "79a280ce1283044103585023bb365d0b"
 SRC_URI[sha256sum] = "96324670f24ebbc530b849b95b17a05db4b409629af780eb085024f3d0807f49"

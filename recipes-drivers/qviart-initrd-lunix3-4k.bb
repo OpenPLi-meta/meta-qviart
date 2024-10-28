@@ -6,7 +6,7 @@ PR = "r7"
 
 SRCDATE = "20170801"
 
-SRC_URI = "http://en3homeftp.net/pub/down/vmlinuz-initrd_${MACHINE}_${SRCDATE}.tar.gz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/vmlinuz-initrd_${MACHINE}_${SRCDATE}.tar.gz"
 
 FILES:${PN} = "/boot"
 

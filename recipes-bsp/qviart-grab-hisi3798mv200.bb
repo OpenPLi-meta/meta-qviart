@@ -15,7 +15,7 @@ RPROVIDES:${PN}  = "aio-grab"
 RREPLACES:${PN}  = "aio-grab"
 RCONFLICTS:${PN} = "aio-grab"
 
-SRC_URI = "http://en3homeftp.net/pub/down/${MACHINE}-grab-${SRCDATE}.tar.gz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/${MACHINE}-grab-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
 

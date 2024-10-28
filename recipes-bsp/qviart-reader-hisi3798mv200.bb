@@ -13,7 +13,7 @@ SRCDATE = "20230831"
 PV = "${SRCDATE}"
 PR = "r0"
 
-SRC_URI = "http://en3homeftp.net/pub/down/hisi3798mv200-libreader-${SRCDATE}.tar.gz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/hisi3798mv200-libreader-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
 
