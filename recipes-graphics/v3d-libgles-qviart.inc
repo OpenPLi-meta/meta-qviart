@@ -37,5 +37,4 @@ FILES:${PN} = "/usr/lib/*"
 FILES:${PN}-dev = "/usr/include/*"
 
 RPROVIDES:${PN} = "virtual-libgles2 virtual-egl libnxpl.so libnexus.so libv3ddriver.so libGLESv2.so libEGL.so libnxclient.so"
-INSANE_SKIP += "already-stripped dev-so 32bit-time"
-
+INSANE_SKIP += "already-stripped dev-so 32bit-time ldflags"
