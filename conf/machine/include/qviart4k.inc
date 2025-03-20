@@ -20,13 +20,14 @@ EXTRA_IMAGEDEPENDS += "\
 	webkit-classic \
 	dumpait-legacy \
 	enigma2-plugin-extensions-hbbtv-webkit \
-        splash-bootlogo \
+	splash-bootlogo \
+	qviart-grab-bcm \
 "
 
 DVBMEDIASINK_CONFIG = "--with-pcm --with-eac3 --with-amr --with-wmv --with-h265 --with-vb6 --with-vb8 --with-vb9 --with-spark"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-qviart"
-PREFERRED_RPROVIDER_aio-grab = "qviart-grab-${CHIPSET}"
+PREFERRED_RPROVIDER_aio-grab = "qviart-grab-bcm"
 
 IMAGE_FSTYPES ?= "tar.bz2"
 
