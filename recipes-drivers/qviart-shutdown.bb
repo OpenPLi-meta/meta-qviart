@@ -31,4 +31,4 @@ pkg_postinst:${PN}:append() {
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-INSANE_SKIP = "32bit-time"
+INSANE_SKIP = "32bit-time ldflags"
