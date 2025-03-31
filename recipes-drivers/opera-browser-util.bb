@@ -4,7 +4,7 @@ LICENSE = "CLOSED"
 SRCREV = "${AUTOREV}"
 PR = "r1"
 
-SRC_URI="git://github.com/MOA-2011/vuplus-opera-browser-util.git"
+SRC_URI="git://github.com/MOA-2011/vuplus-opera-browser-util.git;branch=master;protocol=https"
 
 EXTRA_OECONF = " \
     BUILD_SYS=${BUILD_SYS} \

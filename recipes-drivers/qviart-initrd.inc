@@ -4,7 +4,7 @@ PRIORITY = "required"
 
 PR = "r7"
 
-SRC_URI = "http://en3homeftp.net/pub/down/vmlinuz-initrd_${MACHINE}_${SRCDATE}.tar.gz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/vmlinuz-initrd_${MACHINE}_${SRCDATE}.tar.gz"
 
 FILES_${PN} = "/boot"
 

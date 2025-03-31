@@ -13,6 +13,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 KERNEL_MODULE_AUTOLOAD += "xfs"
 
 MACHINE_EXTRA_RRECOMMENDS = " \
+	gstreamer1.0-plugin-dvbmediasink \
 	gstreamer1.0-libav \
 	splash-bootlogo \
 	qviart-opera-dumpait \
@@ -26,7 +27,7 @@ EXTRA_IMAGEDEPENDS = " \
 TARGET_ARCH = "mipsel"
 DEFAULTTUNE = "mips32el"
 
-DVBMEDIASINK_CONFIG = "--with-qviart --with-wmv --with-pcm --with-eac3 --with-h265"
+DVBMEDIASINK_CONFIG = "--with-wmv --with-pcm --with-eac3 --with-h265"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-qviart"
 PREFERRED_VERSION_linux-qviart = "4.2.1"

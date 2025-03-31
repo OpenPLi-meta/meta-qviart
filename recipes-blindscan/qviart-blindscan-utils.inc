@@ -11,7 +11,7 @@ RPROVIDES_qviart-blindscan-utils-${SOC_FAMILY} += "virtual/blindscan-dvbs"
 PV = "1.0"
 PR = "r0"
 
-SRC_URI = "http://en3homeftp.net/pub/down/qviart_blindscan_${SOC_FAMILY}.tar.xz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/qviart_blindscan_${SOC_FAMILY}.tar.xz"
 
 S = "${WORKDIR}"
 

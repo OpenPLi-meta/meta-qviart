@@ -14,7 +14,7 @@ SRC_URI[sha256sum] = "cff81e142d078688cb861068d21cf8cf70fd9754c710a363dd130e0e0b
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${KV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-SRC_URI += "http://en3homeftp.net/pub/src/qviart-linux-${KV}-${SRCDATE}.tar.gz \
+SRC_URI += "http://downloads.openpli.org/archive/qviart/qviart-linux-${KV}-${SRCDATE}.tar.gz \
     file://defconfig \
     file://dvbskyt330_si2168_demod.patch \
     file://0002-log2-give-up-on-gcc-constant-optimizations.patch \

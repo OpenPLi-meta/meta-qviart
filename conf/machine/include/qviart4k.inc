@@ -4,7 +4,6 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "armv7ahf-neon"
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
-	${@bb.utils.contains("GST_VERSION", "1.0", "gstreamer1.0-libav", "gst-ffmpeg", d)} \
         qviart-initrd-${MACHINE} \
         qviart-shutdown \
 "
@@ -13,6 +12,7 @@ KERNEL_MODULE_AUTOLOAD += "xfs"
 
 MACHINE_EXTRA_RRECOMMENDS = " \
 	gstreamer1.0-plugin-dvbmediasink \
+	gstreamer1.0-libav \
 	ntfs-3g \
 "
 
@@ -20,13 +20,14 @@ EXTRA_IMAGEDEPENDS += "\
 	webkit-classic \
 	dumpait-legacy \
 	enigma2-plugin-extensions-hbbtv-webkit \
-        splash-bootlogo \
+	splash-bootlogo \
+	qviart-grab-bcm \
 "
 
 DVBMEDIASINK_CONFIG = "--with-pcm --with-eac3 --with-amr --with-wmv --with-h265 --with-vb6 --with-vb8 --with-vb9 --with-spark"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-qviart"
-PREFERRED_RPROVIDER_aio-grab = "qviart-grab-${CHIPSET}"
+PREFERRED_RPROVIDER_aio-grab = "qviart-grab-bcm"
 
 IMAGE_FSTYPES ?= "tar.bz2"
 

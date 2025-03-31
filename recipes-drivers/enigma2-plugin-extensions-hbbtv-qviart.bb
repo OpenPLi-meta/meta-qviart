@@ -4,7 +4,7 @@ PACKAGE_ARCH := "${MACHINE_ARCH}"
 SRCREV = "${AUTOREV}"
 PR = "r1"
 
-SRC_URI = "git://github.com/pli3/enigma2-plugin-extensions-hbbtv-qviart.git"
+SRC_URI = "git://github.com/pli3/enigma2-plugin-extensions-hbbtv-qviart.git;branch=master;protocol=https"
 
 EXTRA_OECONF = " \
     BUILD_SYS=${BUILD_SYS} \

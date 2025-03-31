@@ -6,7 +6,7 @@ PR="${SRCDATE}.${SRCDATE_PR}"
 
 PROVIDES = "virtual/libgles2 virtual/egl"
 
-SRC_URI = "http://en3homeftp.net/pub/down/libgles-arm-${SRCDATE}.tar.gz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/libgles-arm-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}/libgles"
 
@@ -38,4 +38,3 @@ FILES_${PN}-dev = "/usr/include/*"
 
 RPROVIDES_${PN} = "virtual/libgles2 virtual/egl libnxpl.so libnexus.so libv3ddriver.so libGLESv2.so libEGL.so libnxclient.so"
 INSANE_SKIP_${PN} += "already-stripped dev-so"
-

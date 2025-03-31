@@ -30,6 +30,5 @@ IMAGE_CMD_qviartemmc () {
 	if [ $ROOTFS_SIZE -lt $MIN_COUNT ]; then
 		eval COUNT=\"$MIN_COUNT\"
 	fi
-
 	make_ext4fs -s -l 6968M ${IMGDEPLOYDIR}/${IMAGE_NAME}_subrootfs.ext4 ${IMGDEPLOYDIR}/rootfs
 }

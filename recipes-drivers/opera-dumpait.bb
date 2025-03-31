@@ -6,7 +6,7 @@ PR = "r1"
 
 inherit gitpkgv deploy
 
-SRC_URI="git://github.com/MOA-2011/vuplus-opera-dumpait.git"
+SRC_URI="git://github.com/MOA-2011/vuplus-opera-dumpait.git;branch=master;protocol=https"
 
 EXTRA_OECONF = " \
 			 BUILD_SYS=${BUILD_SYS} \

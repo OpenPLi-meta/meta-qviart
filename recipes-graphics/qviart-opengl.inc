@@ -9,7 +9,7 @@ PR = "r1-${SRCDATE}"
 PROVIDES = "virtual/libgles1 virtual/libgles2 virtual/egl"
 RPROVIDES_${PN} = "virtual/libgles1 virtual/libgles2 virtual/egl libEGL.so libGLESv2.so libmali.so"
 
-SRC_URI = "http://en3homeftp.net/pub/down/hisi3798mv200-opengl-${SRCDATE}.tar.gz"
+SRC_URI = "http://downloads.openpli.org/archive/qviart/hisi3798mv200-opengl-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}/usr"
 
