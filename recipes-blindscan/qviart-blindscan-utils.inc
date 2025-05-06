@@ -2,7 +2,7 @@ DESCRIPTION = "Utils for blindscan"
 SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 PACKAGES = "qviart-blindscan-utils-${SOC_FAMILY} ${PN}-dbg"
 
 PROVIDES += "virtual/blindscan-dvbs"
@@ -19,4 +19,4 @@ INHIBIT_PACKAGE_STRIP = "1"
 
 FILES:${PN}-dbg-${SOC_FAMILY} = "${bindir}/.debug/"
 
-INSANE_SKIP = "32bit-time"
+INSANE_SKIP = "32bit-time ldflags"

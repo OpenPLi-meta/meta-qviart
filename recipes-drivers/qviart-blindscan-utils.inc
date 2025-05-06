@@ -30,6 +30,6 @@ FILES:${PN}-dbg-${CHIP} = "${bindir}/.debug/"
 
 INHIBIT_PACKAGE_STRIP = "1"
 
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 INSANE_SKIP = "32bit-time ldflags"
