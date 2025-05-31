@@ -16,6 +16,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/stblinux-${KV}:"
 SRC_URI = "http://downloads.openpli.org/archive/qviart/linux-${KV}.tar.xz \
 	file://0001.fix_hwtype.patch \
 	file://0002.recording_issue.patch \
+	file://build-with-gcc12-fixes.patch \
 	file://0001.remove_vtuner_index_check.patch \
 	file://bcm_genet_disable_warn.patch \
 	file://rtl8712_fix_build_error.patch \
@@ -36,6 +37,7 @@ KERNEL_IMAGETYPE = "zImage"
 KERNEL_OUTPUT = "arch/${ARCH}/boot/${KERNEL_IMAGETYPE}"
 KERNEL_OBJECT_SUFFIX = "ko"
 KERNEL_IMAGEDEST = "tmp"
+KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS=-Wno-attribute-alias"
 
 FILES:${KERNEL_PACKAGE_NAME}-image = "/${KERNEL_IMAGEDEST}/zImage"
 
@@ -65,4 +67,4 @@ pkg_postrm:kernel-image () {
 
 MACHINE_KERNEL_PR:append = "${PR_INC}.0"
 
-COMPATIBLE_MACHINE = "lunix|lunix3-4k"
+COMPATIBLE_MACHINE = "lunix3-4k"

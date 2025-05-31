@@ -33,7 +33,6 @@ PREFERRED_PROVIDER_virtual/kernel = "linux-qviart"
 PREFERRED_VERSION_linux-qviart = "4.2.1"
 
 IMAGE_FSTYPES ?= "ubi"
-
 UBI_VOLNAME = "rootfs"
 MKUBIFS_ARGS = "-m 2048 -e 126976 -c 4096 -F"
 UBINIZE_ARGS = "-m 2048 -p 128KiB"
@@ -69,7 +68,7 @@ IMAGE_CMD:ubi:append = " \
 	rm -Rf update; \
 "
 
-MACHINE_FEATURES = "dvb-c alsa usbhost wlan kernelwifi 3dtv switchoff osdposition hdmicec dvbusb"
+MACHINE_FEATURES += "dvb-c alsa usbhost wlan kernelwifi 3dtv switchoff osdposition hdmicec dvbusb"
 
 require conf/machine/include/mips/tune-mips32.inc
 require conf/machine/include/qviart-wifi.inc
