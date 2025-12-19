@@ -1,7 +1,7 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 
-PPLOADER_FILE = "apploader.bin"
+APPLOADER_FILE = "apploader.bin"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += " \
 	qviart-reader-${SOC_FAMILY} \
