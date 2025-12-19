@@ -11,7 +11,7 @@ SRCDATE = "20220915"
 
 S = "${WORKDIR}"
 
-SRC_URI = "http://en3homeftp.net/down/dags-partitions-${MACHINE}_${SRCDATE}.tar.gz \
+SRC_URI = "http://downloads.openpli.org/archive/qviart/dags-partitions-${MACHINE}_${SRCDATE}.tar.gz \
         file://flash-updater"
 
 inherit update-rc.d
